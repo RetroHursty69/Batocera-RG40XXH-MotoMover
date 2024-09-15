@@ -1,0 +1,45 @@
+<!--
+theme name:     MOTOMOVE RG40XXH
+creator:		Dwayne Hurst
+version         1
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+   <formatVersion>7</formatVersion>  
+   
+<feature supported="carousel">
+   <view name="system">   
+                    		
+      <image name="background667" extra="true">
+         <origin>0 0</origin>
+	     <path>./_inc/patterns/${system.theme}.png</path>       
+         <pos>-0.25 0</pos>
+         <size>1.5 1</size>
+         <zIndex>1</zIndex>
+			<storyboard>
+				<animation property="x" from="-0.25" to="0" begin="250" duration="3500" mode="Linear"/>				
+			</storyboard>                                        
+      </image>
+
+      <image name="background691" extra="true">
+         <origin>0 0</origin>
+	     <path>./_inc/patterns/shade.png</path>       
+         <pos>-0.125 0</pos>
+         <size>1.5 1</size>
+         <zIndex>6</zIndex>
+			<storyboard>
+				<animation property="x" from="-0.125" to="0" begin="250" duration="3500" mode="Linear"/>				
+			</storyboard>                                        
+      </image>              
+   </view>
+
+   <view name="detailed,video,basic,grid,gamecarousel">   
+      <image name="background667" extra="true">
+	     <path>./_inc/patterns/${system.theme}.png</path>                                            
+      </image>          
+   </view>    
+   
+</feature>
+</theme>
